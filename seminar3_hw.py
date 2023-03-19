@@ -47,7 +47,7 @@ last_index = len(numbers_list) - 1
 min_number = numbers_list[first_index]
 max_number = numbers_list[last_index]
 
-if min == max == search_number:
+if min_number == max_number == search_number:
     print("Нельзя найти ближайшее число, т.к. введены одинаковые числа")
 elif search_number > max_number:
     print(f"Ближайшее число: {max_number}")
@@ -55,7 +55,7 @@ elif search_number < min_number:
     print(f"Ближайшее число: {min_number}")
 else:
     index_closest_number = 0
-    min_difference = max
+    min_difference = max_number
     for i in range(list_len):
         current_difference = search_number - numbers_list[i]
         if current_difference == 0:
