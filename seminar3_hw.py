@@ -113,5 +113,6 @@ for character in scrabble_word:
     for value in values_letters.keys():
         if character in values_letters[value]:
             current_value += value
+            break
 
 print(current_value)
